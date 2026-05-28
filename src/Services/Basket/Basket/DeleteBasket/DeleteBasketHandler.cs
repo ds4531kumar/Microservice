@@ -20,6 +20,8 @@ public class DeleteBasketCommandHandler(IBasketRepository repository)
     {
         // TODO: delete basket from database and cache       
         await repository.DeleteBasket(command.UserName, cancellationToken);
+        int a =10;
+        string d="agagga";
 
         return new DeleteBasketResult(true);
     }
