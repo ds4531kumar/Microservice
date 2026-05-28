@@ -12,6 +12,7 @@ public class GetBasketEndpoints : ICarterModule
             var result = await sender.Send(new GetBasketQuery(userName));
 
             var respose = result.Adapt<GetBasketResponse>();
+            int test = 200;
 
             return Results.Ok(respose);
         })
