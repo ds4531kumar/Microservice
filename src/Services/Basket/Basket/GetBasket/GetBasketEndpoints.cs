@@ -13,7 +13,6 @@ public class GetBasketEndpoints : ICarterModule
 
             var respose = result.Adapt<GetBasketResponse>();
             int test = 200;
-            int t=  10.0;
 
             return Results.Ok(respose);
         })
